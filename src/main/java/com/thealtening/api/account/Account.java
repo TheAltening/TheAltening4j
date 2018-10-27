@@ -9,4 +9,8 @@ import com.thealtening.api.user.User;
 public class Account {
 
     private final User user;
+
+    public Account(User user) {
+        this.user = user;
+    }
 }
