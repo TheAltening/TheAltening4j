@@ -33,4 +33,8 @@ public class UserInformationGatheringProcess extends Process {
             e.printStackTrace();
         }
     }
+
+    public User getUser() {
+        return user;
+    }
 }
