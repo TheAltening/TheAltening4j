@@ -27,7 +27,6 @@ public class GeneratingAccountProcess extends Process {
         try {
             URL url = new URL(Helper.getInstance().attachApiKey(Helper.getInstance().GENERATE_ENDPOINT, user.getKey()));
             account = gson.fromJson(new InputStreamReader(url.openStream()), Account.class);
-            System.out.println(account.getUsername());
         } catch (IOException e) {
             e.printStackTrace();
         }

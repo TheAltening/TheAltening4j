@@ -28,7 +28,6 @@ public class UserInformationGatheringProcess extends Process {
             URL url = new URL(Helper.getInstance().attachApiKey(Helper.getInstance().LICENSE_ENDPOINT, key));
             user = gson.fromJson(new InputStreamReader(url.openStream()), User.class);
             user.setKey(key);
-            System.out.println(user.getName());
         } catch (IOException e) {
             e.printStackTrace();
         }
