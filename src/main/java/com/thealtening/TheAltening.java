@@ -23,7 +23,6 @@ public final class TheAltening {
     private final String apiKey;
     private final String website = "http://api.thealtening.com/v1/";
     private final Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
     public TheAltening(final String apiKey) {
         this.apiKey = apiKey;
     }
