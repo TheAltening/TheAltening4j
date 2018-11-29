@@ -35,7 +35,7 @@ Maven:
 ```
 Make an instance of the `TheAltening` class and provide the api key
 \
-`private final TheAltening thealtening = new TheAltening("API-KEY")`;`
+`private final TheAltening thealtening = new TheAltening("API-KEY");`
 \
 `TheAltening#getUser()` - returns the  User information
 \
