@@ -7,7 +7,6 @@ Gradle:
 ```css
 allprojects {
 		repositories {
-			...
 			maven { url 'https://jitpack.io' }
 		}
 	}
@@ -35,9 +34,14 @@ Maven:
 	</dependency>
 ```
 Make an instance of the `TheAltening` class and provide the api key
-`private final TheAltening thealtening = new TheAltening("API-KEY")`;
+\
+`private final TheAltening thealtening = new TheAltening("API-KEY")`;`
+\
 `TheAltening#getUser()` - returns the  User information
+\
 `TheAltening#generateAccount()` - generates an account
+\
 `TheAltening#favoriteAccount()` - **NEW!** allows to favorite an account from the API!
+\
 `TheAltening#privateAccount()` - **NEW!** allows to private an account from the API!
 
