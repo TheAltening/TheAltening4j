@@ -3,7 +3,6 @@ package com.thealtening;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.sun.istack.internal.Nullable;
 import com.thealtening.domain.Account;
 import com.thealtening.domain.User;
 import com.thealtening.utils.Utilities;
