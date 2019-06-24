@@ -44,10 +44,14 @@ public class TheAltening {
         retrofit = new Retrofit.Builder().client(httpClient).addConverterFactory(MoshiConverterFactory.create()).build();
     }
 
+    public boolean favoriteAccount(AccountInfo accountInfo) throws IOException {
+        return this.favoriteAccount(accountInfo.getToken());
+    }
+
     public boolean favoriteAccount(String token) throws IOException {
         final LicenseInfo licenseInfo = getLicenseInfo();
 
-        if (licenseInfo.isPremium() && licenseInfo.getPremium_name().equals("premium")) {
+        if (licenseInfo.isPremium() && licenseInfo.getPremiumName().equals("premium")) {
             final FavoriteService favoriteService = retrofit.create(FavoriteService.class);
             final Call<FavoriteError> favoriteServiceCall = favoriteService.favoriteAccount(token);
             final Response<FavoriteError> favoriteErrorResponse = favoriteServiceCall.execute();
@@ -64,10 +68,14 @@ public class TheAltening {
         return false;
     }
 
+    public boolean privateAccount(AccountInfo accountInfo) throws IOException {
+        return this.privateAccount(accountInfo.getToken());
+    }
+
     public boolean privateAccount(String token) throws IOException {
         final LicenseInfo licenseInfo = getLicenseInfo();
 
-        if (licenseInfo.isPremium() && licenseInfo.getPremium_name().equals("premium")) {
+        if (licenseInfo.isPremium() && licenseInfo.getPremiumName().equals("premium")) {
             final PrivateService privateService = retrofit.create(PrivateService.class);
             final Call<PrivateError> privateServiceCall = privateService.privateAccount(token);
             final Response<PrivateError> privateErrorResponse = privateServiceCall.execute();
@@ -92,6 +100,8 @@ public class TheAltening {
     }
 
     public AccountInfo getAccountInfo() throws IOException {
+        if(!getLicenseInfo().isPremium())
+            return AccountInfo.EMPTY;
         final AccountService accountService = retrofit.create(AccountService.class);
         final Call<AccountInfo> accountInfoCall = accountService.getLicense();
         final Response<AccountInfo> accountInfoResponse = accountInfoCall.execute();

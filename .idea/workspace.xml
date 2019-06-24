@@ -2,38 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="490f7d6b-66be-4110-ab04-f880365be20f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/API-Java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/TheAltening.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/AccountInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/LicenseInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/error/FavoriteError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/error/PrivateError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/service/FavoriteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/service/LicenseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/service/PrivateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/apitest/TheAlteningTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/thealtening/TheAltening.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/thealtening/domain/Account.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/thealtening/domain/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/thealtening/utils/Pair.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/thealtening/utils/UserSkin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/thealtening/utils/Utilities.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/com/thealtening/TheAlteningAPITests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/TheAltening.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/domain/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/domain/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/utils/Pair.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/utils/UserSkin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/utils/Utilities.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/thealtening/TheAlteningAPITests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/api/TheAltening.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/TheAltening.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/AccountInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/AccountInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/LicenseInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/LicenseInfo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -68,11 +41,11 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="API" type="f1a62948:ProjectNode" />
+                <item name="API-Java" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="API" type="f1a62948:ProjectNode" />
+                <item name="API-Java" type="f1a62948:ProjectNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
               </path>
             </expand>
@@ -87,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/TheAltening.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+            <state relative-caret-position="226">
+              <caret line="103" column="37" selection-start-line="103" selection-start-column="37" selection-end-line="103" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#944#945#0" expanded="true" />
@@ -101,22 +74,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/apitest/TheAlteningTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/service/LicenseService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,44 +91,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/service/PrivateService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="87">
+                <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+                <folding>
+                  <element signature="imports" expanded="true" />
+                </folding>
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.6.0/19e34d134d732d6ff38a9eac94a0e0ff3d9b0c05/retrofit-2.6.0-sources.jar!/retrofit2/Response.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="116" column="21" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
-              <folding>
-                <element signature="e#4803#4804#0" expanded="true" />
-                <element signature="e#4824#4825#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.12.0/2647551116856a6403d1a21e236837a7501c08a8/okhttp-3.12.0-sources.jar!/okhttp3/Response.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/json/AccountInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="87" column="36" lean-forward="true" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
+            <state relative-caret-position="1802">
+              <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
               <folding>
                 <element signature="e#705#706#0" expanded="true" />
                 <element signature="e#733#734#0" expanded="true" />
@@ -194,13 +146,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/service/AccountService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/json/LicenseInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+            <state relative-caret-position="238">
+              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/service/PrivateService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -212,19 +182,6 @@
               <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/json/error/FavoriteError.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-              <folding>
-                <element signature="e#348#349#0" expanded="true" />
-                <element signature="e#378#379#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -246,17 +203,22 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Trol &lt;trol1337gmaing@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/com/thealtening/domain/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/thealtening/domain/Account.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/thealtening/utils/UserSkin.java" />
@@ -279,8 +241,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/test/java/TheAlteningTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/thealtening/apitest/TheAlteningTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/LicenseInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/AccountInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thealtening/apitest/TheAlteningTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/PrivateError.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/error/PrivateError.java" />
@@ -289,9 +249,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/service/FavoriteService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/service/LicenseService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/service/PrivateService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/LicenseInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/AccountInfo.java" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/TheAltening.java" />
       </list>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1376" />
@@ -318,157 +288,7 @@
             </path>
             <path>
               <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="thealtening" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="thealtening" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="thealtening" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="thealtening" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-              <item name="error" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="thealtening" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="thealtening" type="462c0819:PsiDirectoryNode" />
-              <item name="apitest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.squareup.moshi:moshi:1.8.0" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.squareup.moshi:moshi:1.8.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="moshi-1.8.0.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.squareup.moshi:moshi:1.8.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="moshi-1.8.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.squareup.moshi:moshi:1.8.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="moshi-1.8.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="squareup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.squareup.moshi:moshi:1.8.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="moshi-1.8.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="squareup" type="462c0819:PsiDirectoryNode" />
-              <item name="moshi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="API" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.squareup.retrofit2:converter-moshi:2.6.0" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -596,8 +416,16 @@
       <workItem from="1543139825039" duration="579000" />
       <workItem from="1543524375427" duration="4482000" />
       <workItem from="1561117202176" duration="1978000" />
-      <workItem from="1561363963362" duration="8688000" />
+      <workItem from="1561363963362" duration="10435000" />
     </task>
+    <task id="LOCAL-00001" summary="Recoded the whole api entirely.&#10;Added support for Account Info.">
+      <created>1561374207810</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561374207811</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -618,7 +446,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17004000" />
+    <option name="totallyTimeSpent" value="18751000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -631,9 +459,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1374" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -642,14 +469,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2831424" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.30769232" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.30769232" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="11" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
@@ -665,11 +492,17 @@
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32980332" />
-      <window_info anchor="right" id="Maven" order="11" />
+      <window_info anchor="right" id="Maven" order="11" weight="0.32980332" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Recoded the whole api entirely.&#10;Added support for Account Info." />
+    <option name="LAST_COMMIT_MESSAGE" value="Recoded the whole api entirely.&#10;Added support for Account Info." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/utilities/Helper.java" />
@@ -686,14 +519,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/process/processes/UserInformationGatheringProcess.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/process/Process.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/IOException.java" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/domain/info/Attribute.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/domain/info/AttributeList.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/domain/info/AccountInfo.java" />
@@ -762,9 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.6.0/19e34d134d732d6ff38a9eac94a0e0ff3d9b0c05/retrofit-2.6.0-sources.jar!/retrofit2/Call.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -797,32 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/json/LicenseInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="64" column="5" lean-forward="true" selection-start-line="42" selection-start-column="3" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-            <element signature="e#806#807#0" expanded="true" />
-            <element signature="e#841#842#0" expanded="true" />
-            <element signature="e#875#876#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#951#952#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -887,10 +683,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/service/AccountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/service/FavoriteService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/json/LicenseInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/service/PrivateService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/json/AccountInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="87" column="36" lean-forward="true" selection-start-line="87" selection-start-column="36" selection-end-line="87" selection-end-column="36" />
+        <state relative-caret-position="1802">
+          <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
           <folding>
             <element signature="e#705#706#0" expanded="true" />
             <element signature="e#733#734#0" expanded="true" />
@@ -920,40 +756,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/service/AccountService.java">
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/service/FavoriteService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="87">
+            <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+            <folding>
+              <element signature="imports" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/service/LicenseService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/service/PrivateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -962,8 +791,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/TheAltening.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        <state relative-caret-position="226">
+          <caret line="103" column="37" selection-start-line="103" selection-start-column="37" selection-end-line="103" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#944#945#0" expanded="true" />

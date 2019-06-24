@@ -32,11 +32,11 @@ public class LicenseInfo {
         return premium;
     }
 
-    public String getPremium_name() {
+    public String getPremiumName() {
         return premium_name;
     }
 
-    public String getExpires() {
+    public String getExpiryDate() {
         return expires;
     }
 
@@ -61,6 +61,6 @@ public class LicenseInfo {
         }
         LicenseInfo castedLicenseInfo = (LicenseInfo) obj;
 
-        return castedLicenseInfo.getExpires().equals(getExpires()) && castedLicenseInfo.getPremium_name().equals(getPremium_name()) && castedLicenseInfo.isPremium() == isPremium() && castedLicenseInfo.getUsername().equals(getUsername());
+        return castedLicenseInfo.getExpiryDate().equals(getExpiryDate()) && castedLicenseInfo.getPremiumName().equals(getPremiumName()) && castedLicenseInfo.isPremium() == isPremium() && castedLicenseInfo.getUsername().equals(getUsername());
     }
 }

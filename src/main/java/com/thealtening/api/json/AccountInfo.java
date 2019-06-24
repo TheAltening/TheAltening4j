@@ -41,7 +41,7 @@ public class AccountInfo {
         return username;
     }
 
-    public boolean isLimit() {
+    public boolean isLimited() {
         return limit;
     }
 
@@ -107,11 +107,11 @@ public class AccountInfo {
             return mineplexRank;
         }
 
-        public boolean isLabymodCape() {
+        public boolean hasLabyModCape() {
             return labymodCape;
         }
 
-        public boolean isFiveZigCape() {
+        public boolean hasFiveZigCape() {
             return fiveZigCape;
         }
     }
