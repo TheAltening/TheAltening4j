@@ -34,14 +34,14 @@ This Java Wrapper allows your application to use TheAltening's api to it's fulle
  ```  
  Please look at the tests for how to use the API.
  
-*License data provided*:  
+License data provided:  
  - Users username: LicenseData.getUsername();  
  - Premium status: LicenseData.isPremium();  
  - Generator license: LicenseData.getPremiumName();  
  - Expiry date: LicenseData.getExpiryDate().  
   
   
-**Account data provided**:  
+Account data provided:  
  - Limit: AccountData.isLimited()
  - Token: AccountData.getToken()
  - Username: AccountData.getUsername()
