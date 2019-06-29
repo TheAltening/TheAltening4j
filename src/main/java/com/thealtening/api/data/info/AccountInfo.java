@@ -44,8 +44,9 @@ public class AccountInfo {
     public boolean hasFiveZigCape() {
         return fiveZigCape;
     }
+
     @Override
     public String toString() {
-        return String.format("AccountInfo[%s:%s:%s:%s:%s:%s]",hypixelLevel, hypixelRank, mineplexLevel, mineplexRank, labymodCape, fiveZigCape);
+        return String.format("AccountInfo[%s:%s:%s:%s:%s:%s]", hypixelLevel, hypixelRank, mineplexLevel, mineplexRank, labymodCape, fiveZigCape);
     }
 }

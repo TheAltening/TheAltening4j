@@ -8,7 +8,7 @@ import java.net.URL;
 
 public class HttpUtils {
 
-    public static String readURLToString(String link) throws IOException {
+    protected String connect(String link) throws IOException {
         final URL url = new URL(link);
         final InputStream inputStream = url.openStream();
         BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));

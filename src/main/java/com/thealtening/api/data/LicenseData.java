@@ -7,8 +7,10 @@ public class LicenseData {
     private String username;
 
     private boolean premium;
+
     @SerializedName("premium_name")
     private String premiumName;
+
     @SerializedName("expires")
     private String expiryDate;
 
@@ -33,6 +35,7 @@ public class LicenseData {
     public String toString() {
         return String.format("LicenseData[%s:%s:%s:%s]", username, premium, premiumName, expiryDate);
     }
+
     @Override
     public boolean equals(Object obj) {
         if (!(obj instanceof LicenseData)) {

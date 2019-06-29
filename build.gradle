@@ -4,12 +4,7 @@ buildscript {
             url = "https://plugins.gradle.org/m2"
         }
     }
-    dependencies {
-
-         classpath "com.github.jengelman.gradle.plugins:shadow:4.0.4"
-    }
 }
-apply plugin: "com.github.johnrengelman.shadow"
 apply plugin: 'java'
 group 'com.thealtening'
 version '4.0.0'
@@ -23,8 +18,4 @@ repositories {
 dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.google.code.gson:gson:2.8.5'
-}
-shadowJar {
-    minimize()
-    archiveName = "TheAltening-Minimized.jar"
 }

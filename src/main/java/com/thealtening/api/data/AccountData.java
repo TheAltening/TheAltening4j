@@ -14,7 +14,6 @@ public class AccountData {
 
     private AccountInfo info;
 
-
     public String getToken() {
         return token;
     }
@@ -34,10 +33,12 @@ public class AccountData {
     public AccountInfo getInfo() {
         return info;
     }
+
     @Override
     public String toString() {
         return String.format("AccountData[%s:%s:%s:%s]", token, username, password, limit);
     }
+
     @Override
     public boolean equals(Object obj) {
         if (!(obj instanceof AccountData)) {
