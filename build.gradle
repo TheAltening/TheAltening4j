@@ -1,9 +1,18 @@
-plugins {
-    id 'java'
-}
+buildscript {
+    repositories {
+        maven {
+            url = "https://plugins.gradle.org/m2"
+        }
+    }
+    dependencies {
 
+         classpath "com.github.jengelman.gradle.plugins:shadow:4.0.4"
+    }
+}
+apply plugin: "com.github.johnrengelman.shadow"
+apply plugin: 'java'
 group 'com.thealtening'
-version '3.0.0'
+version '4.0.0'
 
 sourceCompatibility = 1.8
 
@@ -12,6 +21,9 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
-    implementation 'com.squareup.retrofit2:converter-moshi:2.6.0'
+    compile 'com.google.code.gson:gson:2.8.5'
+}
+shadowJar {
+    minimize()
+    archiveName = "TheAltening-Minimized.jar"
 }

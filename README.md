@@ -10,7 +10,7 @@ This Java Wrapper allows your application to use TheAltening's api to it's fulle
         }
     }
     dependencies {
-        implementation 'com.github.TheAltening:API-Java:3.0.0'
+        implementation 'com.github.TheAltening:API-Java:4.0.0'
     }
 ```
 
@@ -40,42 +40,77 @@ import com.thealtening.api.json.*;
 
 public class Application {   
     public static void main(String[] args){
-      final TheAltening theAltening = new TheAltening.Builder().setApiKey("API_KEY");
+      final TheAltening theAltening = new TheAltening("API_KEY");
       // Returns info about the account you just generated
-      final AccountInfo accountInfo = theAltening.getAccountInfo();
+      final AccountData AccountData = theAltening.getAccountData();
       // Returns info about license
-      final LicenseInfo licenseInfo = theAltening.getLicenseInfo();
+      final LicenseData LicenseData = theAltening.getLicenseData();
       // adds your account to the privated list
-      if(theAltening.privateAccount(accountInfo)){
+      if(theAltening.privateAccount(AccountData)){
          // DO STUFF
       }
       // adds your account to the favorited list
-      if(theAltening.favoriteAccount(accountInfo)) {
+      if(theAltening.favoriteAccount(AccountData)) {
           // DO STUFF
       }
+    }
+}
+```
+Now supports async!
+```java
+import com.thealtening.api.*;
+import com.thealtening.data.*;
+
+public class Application {   
+    public static void main(String[] args){
+      final TheAltening theAltening = new TheAltening("API_KEY");
+      final TheAltening.Asynchronous asynchronous = new TheAltening.Asynchronous(theAltening);
+      asynchronous.getAccountData().thenAccept(account -> {
+          asynchronous.favoriteAccount(account.getToken()).thenAccept(bool -> {
+                    if(bool) {
+                        // favorited account
+                    }
+          }).exceptionally(error -> {
+                    // handle error here;
+          });
+          asynchronous.favoriteAccount(account.getToken()).thenAccept(bool -> {
+              if(bool) {
+                  // favorited account
+              }
+          }).exceptionally(error -> {
+              // handle error here;
+          });
+          // Account data 
+      }).exceptionally(error -> {
+          // handle error here;
+      });
+      asynchronous.getLicenseData().thenAccept(license -> {
+          
+      }).exceptionally(error -> {
+          // handle error here;
+      });
+      
     }
 }
 ```
 
 
 *License data provided*:
-
-    Users username: `LicenseInfo.getUsername()`;
-    Is the account premium: `LicenseInfo.isPremium()`;
-    What generator license they have purchased: `LicenseInfo.getPremiumName()`;
-    Expiry date: `LicenseInfo.getExpiryDate()`.
+    Users username: `LicenseData.getUsername()`;
+    Is the account premium: `LicenseData.isPremium()`;
+    What generator license they have purchased: `LicenseData.getPremiumName()`;
+    Expiry date: `LicenseData.getExpiryDate()`.
 
 
 **Account data provided**:
-
-    Limit (cycling accounts if true): `AccountInfo.isLimited()`
-    Token: `AccountInfo.getToken()`
-    Username: `AccountInfo.getUsername()`
-    Password: `AccountInfo.getPassword()`
+    Limit (cycling accounts if true): `AccountData.isLimited()`
+    Token: `AccountData.getToken()`
+    Username: `AccountData.getUsername()`
+    Password: `AccountData.getPassword()`
         Account info from data:
-            Hypixel rank: `AccountInfo.Data.getHypixelRank()`;
-            Hypixel level: `AccountInfo.Data.getHypixelLevel()`;
-            Mineplex rank: `AccountInfo.Data.getMineplexRank()`;
-            Mineplex level: `AccountInfo.Data.getMineplexLevel()`;
-            5zig cape: `AccountInfo.Data.hasFiveZigCape()`;
-            labymod cape: `AccountInfo.Data.hasLabyModCape()`.
+            Hypixel rank: `AccountData.getHypixelRank()`;
+            Hypixel level: `AccountData.getHypixelLevel()`;
+            Mineplex rank: `AccountData.getMineplexRank()`;
+            Mineplex level: `AccountData.getMineplexLevel()`;
+            5zig cape: `AccountData.hasFiveZigCape()`;
+            labymod cape: `AccountData.hasLabyModCape()`.
