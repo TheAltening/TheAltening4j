@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="490f7d6b-66be-4110-ab04-f880365be20f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/data/AccountData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/data/LicenseData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/data/info/AccountInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/utils/HttpUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/utils/Reference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/thealtening/api/TheAlteningAPITests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/api/TheAltening.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thealtening/api/TheAltening.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/AccountInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/LicenseInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/error/FavoriteError.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/api/json/error/PrivateError.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/api/service/AccountService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/api/service/FavoriteService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/api/service/LicenseService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealtening/api/service/PrivateService.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -99,7 +85,7 @@
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/CompletableFuture.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="1816" column="7" lean-forward="true" selection-start-line="1816" selection-start-column="7" selection-end-line="1816" selection-end-column="7" />
+              <caret line="1816" column="7" selection-start-line="1816" selection-start-column="7" selection-end-line="1816" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -107,22 +93,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+            <state relative-caret-position="193">
+              <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/thealtening/api/TheAlteningAPITests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+              <folding>
+                <element signature="e#314#315#0" expanded="true" />
+                <element signature="e#365#366#0" expanded="true" />
+                <element signature="e#490#491#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="153">
-                <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-                <folding>
-                  <element signature="imports" expanded="true" />
-                  <element signature="imports" expanded="true" />
-                </folding>
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="191">
+                <caret line="50" selection-start-line="50" selection-end-line="50" />
               </first_editor>
               <second_editor />
             </state>
@@ -132,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/TheAltening.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="99" column="46" selection-start-line="99" selection-start-column="46" selection-end-line="99" selection-end-column="46" />
+            <state relative-caret-position="192">
+              <caret line="61" column="48" lean-forward="true" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -269,7 +265,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/service/Service.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/service/TheAlteningService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/util/CompletableFutureUtil.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/data/UserData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/task/Task.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/utils/Reference.java" />
@@ -280,6 +275,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thealtening/api/TheAltening.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/com/thealtening/api/TheAlteningAPITests.java" />
       </list>
     </option>
   </component>
@@ -290,7 +287,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1785" />
+    <option name="x" value="-1982" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
@@ -362,6 +359,40 @@
               <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="API-Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="API-Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="API-Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="thealtening" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="API-Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="API-Java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="thealtening" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="API-Java" type="b2602c69:ProjectViewProjectNode" />
@@ -518,7 +549,7 @@
       <workItem from="1561363963362" duration="15378000" />
       <workItem from="1561397036544" duration="45000" />
       <workItem from="1561742210434" duration="5500000" />
-      <workItem from="1561805534911" duration="2492000" />
+      <workItem from="1561805534911" duration="4515000" />
     </task>
     <task id="LOCAL-00001" summary="Recoded the whole api entirely.&#10;Added support for Account Info.">
       <created>1561374207810</created>
@@ -527,7 +558,14 @@
       <option name="project" value="LOCAL" />
       <updated>1561374207811</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Recoded the whole API again.&#10;Added Asynchronous suppport.">
+      <created>1561808182593</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561808182598</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -548,7 +586,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31731000" />
+    <option name="totallyTimeSpent" value="33754000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -605,28 +643,10 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Recoded the whole api entirely.&#10;Added support for Account Info." />
-    <option name="LAST_COMMIT_MESSAGE" value="Recoded the whole api entirely.&#10;Added support for Account Info." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/thealtening/api/TheAltening.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/thealtening/api/TheAltening.java</url>
-          <line>59</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Recoded the whole API again.&#10;Added Asynchronous suppport." />
+    <option name="LAST_COMMIT_MESSAGE" value="Recoded the whole API again.&#10;Added Asynchronous suppport." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/net/MalformedURLException.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/account/Account.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/process/processes/GeneratingAccountProcess.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/process/processes/UserInformationGatheringProcess.java" />
@@ -799,17 +819,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/concurrent/CompletableFuture.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="1816" column="7" lean-forward="true" selection-start-line="1816" selection-start-column="7" selection-end-line="1816" selection-end-column="7" />
+          <caret line="1816" column="7" selection-start-line="1816" selection-start-column="7" selection-end-line="1816" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -823,27 +836,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="191">
+            <caret line="50" selection-start-line="50" selection-end-line="50" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="23" column="34" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thealtening/api/TheAltening.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="99" column="46" selection-start-line="99" selection-start-column="46" selection-end-line="99" selection-end-column="46" />
+        <state relative-caret-position="192">
+          <caret line="61" column="48" lean-forward="true" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="153">
-            <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
-            <folding>
-              <element signature="imports" expanded="true" />
-              <element signature="imports" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thealtening/api/TheAlteningAPITests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding>
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#365#366#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
