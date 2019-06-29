@@ -29,7 +29,7 @@ This Java Wrapper allows your application to use TheAltening's api to it's fulle
 	<dependency>
 	    <groupId>com.github.TheAltening</groupId>
 	    <artifactId>API-Java</artifactId>
-	    <version>3.0.0</version>
+	    <version>4.0.0</version>
 	</dependency>
  ```  
  Please look at the tests for how to use the API.
