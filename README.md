@@ -11,7 +11,7 @@ This Java Wrapper allows your application to use TheAltening's api to it's fulle
         }
     }
     dependencies {
-        implementation 'com.github.TheAltening:API-Java:4.0.0'
+        implementation 'com.github.TheAltening:API-Java:master-SNAPSHOT'
     }
 ```  
   
@@ -29,7 +29,7 @@ This Java Wrapper allows your application to use TheAltening's api to it's fulle
 	<dependency>
 	    <groupId>com.github.TheAltening</groupId>
 	    <artifactId>API-Java</artifactId>
-	    <version>4.0.0</version>
+	    <version>master-SNAPSHOT</version>
 	</dependency>
  ```  
  Please look at the tests for how to use the API.
