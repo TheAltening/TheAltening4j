@@ -16,25 +16,14 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-package com.thealtening.api.utils;
+package com.thealtening.api.utils.exceptions;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URL;
-
-public class HttpUtils {
-
-    protected String connect(String link) throws IOException {
-        final URL url = new URL(link);
-        final InputStream inputStream = url.openStream();
-        BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
-        String line;
-        StringBuilder stringBuilder = new StringBuilder();
-        while ((line = br.readLine()) != null) {
-            stringBuilder.append(line).append("\n");
-        }
-        return stringBuilder.toString();
+/**
+ * @author Trol
+ * @since 07/23/2019
+ */
+public class TheAlteningException extends RuntimeException {
+    public TheAlteningException(String error, String errorMessage) {
+        super(String.format("[%s]: %s", error, errorMessage));
     }
 }
