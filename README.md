@@ -13,7 +13,7 @@ A fork of The Altening API originally made by [Trol](https://github.com/Trol1337
  
 ## Usage
 
-1. Create a new `BasicDataRetriever` instance depending on the wanted type:
+To create a new `BasicDataRetriever` instance depending on the wanted type:
 ```java
 import com.thealtening.api.TheAltening
 
@@ -26,7 +26,7 @@ you also can pass the ``BasicDataRetriever`` to ``AsynchronousDataRetriever`` us
 AsynchronousDataRetriever asynchronousDataRetriever = basicDataRetriever.toAsync();
 ```
 
-Even though most of the methods are self-explanatory. If you want a little bit more detailed use of the API check out the tests.
+Even though most of the other methods are self-explanatory. If you want a little bit more detailed use of the API check out the tests.
 
 ## License
 The fork as the original repository requires it is under [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/).
