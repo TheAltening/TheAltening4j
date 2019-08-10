@@ -1,58 +1,32 @@
+# The Altening API for Java
 
-# Java implementation of TheAltening API  
-*Introduction*  
-This Java Wrapper allows your application to use TheAltening's api to it's fullest  
-  
-**Gradle dependency:**  
-```groovy  
-   repositories {
-        maven {
-            url = 'https://jitpack.io'
-        }
-    }
-    dependencies {
-        implementation 'com.github.TheAltening:API-Java:master-SNAPSHOT'
-    }
-```  
-  
-  
-**Maven dependency:**  
-```  
-	<repositories>
-		<repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
-		</repository>
-	</repositories>
+[![Java 8+][java-badge]](https://java.oracle.com/)
+[![Maven Central][maven-badge]](https://search.maven.org/artifact/pw.stamina/pubsub4k)
 
+[java-badge]: https://img.shields.io/badge/Java-8%2B-informational.svg
+[maven-badge]: https://img.shields.io/maven-central/v/pw.stamina/pubsub4k.svg
 
-	<dependency>
-	    <groupId>com.github.TheAltening</groupId>
-	    <artifactId>API-Java</artifactId>
-	    <version>master-SNAPSHOT</version>
-	</dependency>
- ```  
- Please look at the tests for how to use the API.
+A fork of The Altening API originally made by [Trol](https://github.com/Trol1337). The objective of this fork is to improve the performance and readability for its users.
+
+## Prerequisites
+ * Use JDK 1.8+
  
-License data provided:  
- - Users username: LicenseData.getUsername();  
- - Premium status: LicenseData.isPremium();  
- - Generator license: LicenseData.getPremiumName();  
- - Expiry date: LicenseData.getExpiryDate().  
-  
-  
-Account data provided:  
- - Limit: AccountData.isLimited()
- - Token: AccountData.getToken()
- - Username: AccountData.getUsername()
- - Password: AccountData.getPassword()
+## Usage
 
+1. Create a new `BasicDataRetriever` instance depending on the wanted type:
+```java
+import com.thealtening.api.TheAltening
 
-Account Info provided by doing AccountData.getInfo():
- - Hypixel rank: AccountInfo.getHypixelRank()
- - Hypixel level: AccountInfo.getHypixelLevel()
- - Mineplex rank: AccountInfo.getMineplexRank()
- - Mineplex level: AccountInfo.getMineplexLevel()
- - 5zig cape: AccountInfo.hasFiveZigCape()
- - Labymod cape: AccountInfo.hasLabyModCape()
+BasicDataRetriever basicDataRetriever = TheAltening.newBasicRetriever("api key");
+AsynchronousDataRetriever asynchronousDataRetriever = TheAltening.newAsyncRetriever("api key");
+```
+you also can pass the ``BasicDataRetriever`` to ``AsynchronousDataRetriever`` using ``toAsync``:
 
+```java
+AsynchronousDataRetriever asynchronousDataRetriever = basicDataRetriever.toAsync();
+```
+
+Even though most of the methods are self-explanatory. If you want a little bit more detailed use of the API check out the tests.
+
+## License
+The fork as the original repository requires it is under [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/).
