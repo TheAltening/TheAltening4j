@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 BasicDataRetriever
+ * Copyright (C) 2019 TheAltening
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -47,7 +47,6 @@ public class License {
     public String getExpiryDate() {
         return expiryDate;
     }
-
 
     @Override
     public String toString() {

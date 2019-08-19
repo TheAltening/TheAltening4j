@@ -4,9 +4,34 @@
 [![Maven Central][maven-badge]](https://search.maven.org/artifact/nothing)
 
 [java-badge]: https://img.shields.io/badge/Java-8%2B-informational.svg
-[maven-badge]: https://img.shields.io/maven-central/v/pw.stamina/pubsub4k.svg
+[maven-badge]: https://img.shields.io/maven-central/v/com.thealtening.api/api.svg
+[![GitHub license](https://img.shields.io/github/license/TheAltening/TheAltening4j)](https://github.com/TheAltening/TheAltening4j/blob/4.0/LICENSE)
 
-A fork of The Altening API originally made by [Trol](https://github.com/Trol1337). The objective of this fork is to improve the performance and readability for its users.
+TheAltening API made by [Vladymyr](https://github.com/Vladymyr) now branded under the official repo with the release tag "4.0.0"
+#Gradle
+
+
+```groovy
+repositories {
+	mavenCentral()
+}
+dependencies {
+	implementation 'com.thealtening.api:api:@BADGE-VERSION@'
+}
+```
+#Maven
+
+
+```xml
+<dependencies>
+	<dependency>
+		<groupId>com.thealtening.api</groupId>
+		<artifactId>api</artifactId>
+		<version>@BADGE-VERSION@</version>
+	</dependency>
+</dependencies>
+```
+
 
 ## Prerequisites
  * Use JDK 1.8+
@@ -27,6 +52,3 @@ AsynchronousDataRetriever asynchronousDataRetriever = basicDataRetriever.toAsync
 ```
 
 Even though most of the other methods are self-explanatory. If you want a little bit more detailed use of the API check out the tests.
-
-## License
-The fork as the original repository requires it is under [GNU GPLv3](https://choosealicense.com/licenses/gpl-3.0/).

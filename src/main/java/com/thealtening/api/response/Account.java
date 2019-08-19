@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 BasicDataRetriever
+ * Copyright (C) 2019 TheAltening
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -20,9 +20,10 @@ package com.thealtening.api.response;
 
 public class Account {
 
-
     private String username;
+
     private String password;
+
     private String token;
 
     private boolean limit;
@@ -61,7 +62,6 @@ public class Account {
         }
 
         Account other = (Account) obj;
-        return other.getUsername().equals(username)
-                && other.getToken().equals(token);
+        return other.getUsername().equals(username) && other.getToken().equals(token);
     }
 }

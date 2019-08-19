@@ -1,8 +1,15 @@
+plugins {
+    id 'io.codearte.nexus-staging' version '0.21.0'
+}
 apply plugin: 'java'
-group 'com.thealtening'
-version '4.0.0'
+sourceCompatibility = targetCompatibility = 1.8
 
-sourceCompatibility = 1.8
+// Configure group ID, artifact ID, and version
+group = "com.thealtening.api"
+archivesBaseName = "api"
+version = "4.0.1"
+
+
 
 repositories {
     mavenCentral()
@@ -11,4 +18,77 @@ repositories {
 dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.google.code.gson:gson:2.8.5'
+}
+
+// Signing
+apply plugin: 'signing'
+
+signing {
+    sign configurations.archives
+}
+
+// Deploying
+apply plugin: 'maven'
+
+// Add Javadoc JAR and sources JAR to artifact
+task javadocJar(type: Jar) {
+    classifier = 'javadoc'
+    from javadoc
+}
+task sourcesJar(type: Jar) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+artifacts {
+    archives javadocJar, sourcesJar
+}
+
+// Build, sign, and upload
+uploadArchives {
+    repositories {
+        mavenDeployer {
+
+            // Sign POM
+            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+            // Destination
+            repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+                authentication(userName: nexusUsername, password: nexusPassword)
+            }
+            snapshotRepository(url: "https://oss.sonatype.org/content/repositories/snapshots/") {
+                authentication(userName: nexusUsername, password: nexusPassword)
+            }
+
+            // Add required metadata to POM
+            pom.project {
+                name 'TheAltening4j'
+                packaging 'jar'
+                description 'Java Wrapper for TheAltening HTTP API'
+                url 'https://github.com/weibeld/RabbitMQ-Manager'
+
+                scm {
+                    connection 'scm:git:git://github.com/TheAltening/TheAltening4j.git'
+                        developerConnection 'scm:git:ssh://github.com/TheAltening/TheAltening4j.git'
+                        url 'http://github.com/TheAltening/TheAltening4j/tree/master'
+                }
+
+                licenses {
+                    license {
+                        name 'GNU Lesser General Public License version 3'
+                        url 'https://www.gnu.org/licenses/lgpl-3.0.txt'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id 'Trol1337'
+                        name 'Karolis Rokas'
+                        email 'trol1337gaming@gmail.com'
+                        organization 'TheAltening'
+                        organizationUrl 'https://thealtening.com'
+                    }
+                }
+            }
+        }
+    }
 }

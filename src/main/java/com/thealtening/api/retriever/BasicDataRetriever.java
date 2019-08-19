@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 BasicDataRetriever
+ * Copyright (C) 2019 TheAltening
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -37,7 +37,7 @@ public class BasicDataRetriever implements DataRetriever {
     }
 
     @Override
-    public License getLicence() throws TheAlteningException {
+    public License getLicense() throws TheAlteningException {
         JsonObject jsonObject = retrieveData(LICENCE_URL + apiKey);
         return gson.fromJson(jsonObject, License.class);
     }
