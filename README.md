@@ -1,7 +1,7 @@
 # The Altening API for Java
 
 [![Java 8+][java-badge]](https://java.oracle.com/)
-[![Maven Central][maven-badge]](https://search.maven.org/artifact/nothing)
+[![Maven Central][maven-badge]](https://search.maven.org/artifact/com.thealtening.api/api)
 
 [java-badge]: https://img.shields.io/badge/Java-8%2B-informational.svg
 [maven-badge]: https://img.shields.io/maven-central/v/com.thealtening.api/api.svg
