@@ -8,7 +8,7 @@
 [![GitHub license](https://img.shields.io/github/license/TheAltening/TheAltening4j)](https://github.com/TheAltening/TheAltening4j/blob/4.0/LICENSE)
 
 TheAltening API made by [Vladymyr](https://github.com/Vladymyr) now branded under the official repo with the release tag "4.0.0"
-#Gradle
+## Gradle
 
 
 ```groovy
@@ -19,7 +19,7 @@ dependencies {
 	implementation 'com.thealtening.api:api:@BADGE-VERSION@'
 }
 ```
-#Maven
+## Maven
 
 
 ```xml
