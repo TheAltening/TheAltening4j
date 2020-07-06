@@ -22,6 +22,7 @@ import com.thealtening.api.TheAlteningException;
 import com.thealtening.api.response.Account;
 import com.thealtening.api.response.License;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Function;
 
@@ -45,6 +46,14 @@ public class AsynchronousDataRetriever extends BasicDataRetriever {
 
     public CompletableFuture<Boolean> isFavoriteAsync(String token) {
         return completeTask(dr -> dr.isFavorite(token));
+    }
+
+    public CompletableFuture<List<Account>> getPrivatedAccountsAsync() {
+        return completeTask(BasicDataRetriever::getPrivatedAccounts);
+    }
+
+    public CompletableFuture<List<Account>> getFavoritedAccountsAsync() {
+        return completeTask(BasicDataRetriever::getFavoriteAccounts);
     }
 
     private <T> CompletableFuture<T> completeTask(Function<BasicDataRetriever, T> function) {

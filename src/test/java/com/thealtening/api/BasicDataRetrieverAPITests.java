@@ -18,12 +18,13 @@
 
 package com.thealtening.api;
 
+import com.thealtening.api.response.Account;
 import com.thealtening.api.retriever.AsynchronousDataRetriever;
 import com.thealtening.api.retriever.BasicDataRetriever;
 import org.junit.Test;
 
 public class BasicDataRetrieverAPITests {
-    private final BasicDataRetriever basicDataRetriever = TheAltening.newBasicRetriever("api_key_here");
+    private final BasicDataRetriever basicDataRetriever = TheAltening.newBasicRetriever("api-key-here");
     private final AsynchronousDataRetriever asynchronousDataRetriever = basicDataRetriever.toAsync();
 
     @Test
@@ -34,6 +35,20 @@ public class BasicDataRetrieverAPITests {
     @Test
     public void license_gathering() {
         System.out.println(basicDataRetriever.getLicense());
+    }
+
+    @Test
+    public void favorite_account_gathering() {
+        for (Account favoriteAccount : basicDataRetriever.getFavoriteAccounts()) {
+            System.out.println(favoriteAccount);
+        }
+    }
+
+    @Test
+    public void private_account_gathering() {
+        for (Account privatedAccount : basicDataRetriever.getPrivatedAccounts()) {
+            System.out.println(privatedAccount);
+        }
     }
 
     @Test

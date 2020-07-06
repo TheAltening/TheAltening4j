@@ -19,6 +19,7 @@
 package com.thealtening.api.retriever;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.thealtening.api.TheAlteningException;
 import com.thealtening.api.response.Account;
@@ -33,6 +34,7 @@ import java.net.URLConnection;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.charset.UnsupportedCharsetException;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -41,11 +43,13 @@ public interface DataRetriever {
     Logger LOGGER = Logger.getLogger("The Altening");
     Gson gson = new Gson();
 
-    String BASE_URL = "http://api.thealtening.com/v1/";
-    String LICENCE_URL = BASE_URL + "license?token=";
-    String GENERATE_URL = BASE_URL + "generate?info=true&token=";
-    String PRIVATE_ACC_URL = BASE_URL + "private?acctoken=";
-    String FAVORITE_ACC_URL = BASE_URL + "favorite?acctoken=";
+    String BASE_URL = "http://api.thealtening.com/v2/";
+    String LICENCE_URL = BASE_URL + "license?key=";
+    String GENERATE_URL = BASE_URL + "generate?info=true&key=";
+    String PRIVATE_ACC_URL = BASE_URL + "private?token=";
+    String FAVORITE_ACC_URL = BASE_URL + "favorite?token=";
+    String PRIVATES_URL = BASE_URL + "privates?key=";
+    String FAVORITES_URL = BASE_URL + "favorites?key=";
 
     License getLicense();
 
@@ -55,30 +59,34 @@ public interface DataRetriever {
 
     boolean isFavorite(String token) throws TheAlteningException;
 
+    List<Account> getPrivatedAccounts();
+
+    List<Account> getFavoriteAccounts();
+
     void updateKey(String newApiKey);
 
-    default JsonObject retrieveData(String url) throws TheAlteningException {
+    default JsonElement retrieveData(String url) throws TheAlteningException {
         String response;
-        JsonObject jsonObject;
+        JsonElement jsonElement;
         try {
             response = connect(url);
-            jsonObject = gson.fromJson(response, JsonObject.class);
+            jsonElement = gson.fromJson(response, JsonElement.class);
         } catch (IOException e) {
             LOGGER.log(Level.SEVERE, "Error while reading retrieved data from the website");
             throw new TheAlteningException("IO", e.getCause());
         }
 
-        if (jsonObject == null) {
+        if (jsonElement == null) {
             LOGGER.log(Level.SEVERE, "Error while parsing website's response");
             throw new TheAlteningException("JSON", "Parsing error: \n" + response);
         }
 
-        if (jsonObject.has("error") && jsonObject.has("errorMessage")) {
-            LOGGER.log(Level.SEVERE, "The website returned, type: " + jsonObject.get("error").getAsString() + ". Details:" + jsonObject.get("errorMessage").getAsString());
+        if (jsonElement.isJsonObject() && jsonElement.getAsJsonObject().has("error") && jsonElement.getAsJsonObject().has("errorMessage")) {
+            LOGGER.log(Level.SEVERE, "The website returned, type: " + jsonElement.getAsJsonObject().get("error").getAsString() + ". Details:" + jsonElement.getAsJsonObject().get("errorMessage").getAsString());
             throw new TheAlteningException("Connection", "Bad response");
         }
 
-        return jsonObject;
+        return jsonElement;
     }
 
     default boolean isSuccess(JsonObject jsonObject) {

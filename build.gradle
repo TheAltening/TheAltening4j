@@ -7,7 +7,7 @@ sourceCompatibility = targetCompatibility = 1.8
 // Configure group ID, artifact ID, and version
 group = "com.thealtening.api"
 archivesBaseName = "api"
-version = "4.0.1"
+version = "4.1.0"
 
 
 
@@ -64,7 +64,7 @@ uploadArchives {
                 name 'TheAltening4j'
                 packaging 'jar'
                 description 'Java Wrapper for TheAltening HTTP API'
-                url 'https://github.com/weibeld/RabbitMQ-Manager'
+                url 'https://github.com/TheAltening/TheAltening4j'
 
                 scm {
                     connection 'scm:git:git://github.com/TheAltening/TheAltening4j.git'

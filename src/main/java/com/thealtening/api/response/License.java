@@ -23,10 +23,10 @@ import com.google.gson.annotations.SerializedName;
 public class License {
 
     private String username;
-
+    @SerializedName("hasLicense")
     private boolean premium;
 
-    @SerializedName("premium_name")
+    @SerializedName("licenseType")
     private String premiumName;
 
     @SerializedName("expires")

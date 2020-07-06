@@ -18,10 +18,15 @@
 
 package com.thealtening.api.retriever;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.thealtening.api.TheAlteningException;
 import com.thealtening.api.response.Account;
 import com.thealtening.api.response.License;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class BasicDataRetriever implements DataRetriever {
 
@@ -38,26 +43,50 @@ public class BasicDataRetriever implements DataRetriever {
 
     @Override
     public License getLicense() throws TheAlteningException {
-        JsonObject jsonObject = retrieveData(LICENCE_URL + apiKey);
+        JsonObject jsonObject = retrieveData(LICENCE_URL + apiKey).getAsJsonObject();
         return gson.fromJson(jsonObject, License.class);
     }
 
     @Override
     public Account getAccount() throws TheAlteningException {
-        JsonObject jsonObject = retrieveData(GENERATE_URL + apiKey);
+        JsonObject jsonObject = retrieveData(GENERATE_URL + apiKey).getAsJsonObject();
         return gson.fromJson(jsonObject, Account.class);
     }
 
     @Override
     public boolean isPrivate(String token) throws TheAlteningException {
-        JsonObject jsonObject = retrieveData(PRIVATE_ACC_URL + token + "&token=" + apiKey);
+        JsonObject jsonObject = retrieveData(PRIVATE_ACC_URL + token + "&key=" + apiKey).getAsJsonObject();
         return isSuccess(jsonObject);
     }
 
     @Override
     public boolean isFavorite(String token) throws TheAlteningException {
-        JsonObject jsonObject = retrieveData(FAVORITE_ACC_URL + token + "&token=" + apiKey);
+        JsonObject jsonObject = retrieveData(FAVORITE_ACC_URL + token + "&key=" + apiKey).getAsJsonObject();
         return isSuccess(jsonObject);
+    }
+
+    @Override
+    public List<Account> getPrivatedAccounts() {
+        final List<Account> privatedAccountList = new ArrayList<>();
+        JsonArray privatedAccountsObject = retrieveData(PRIVATES_URL + apiKey).getAsJsonArray();
+        for (JsonElement jsonElement : privatedAccountsObject) {
+            if(jsonElement.isJsonObject()) {
+                privatedAccountList.add(gson.fromJson(jsonElement, Account.class));
+            }
+        }
+        return privatedAccountList;
+    }
+
+    @Override
+    public List<Account> getFavoriteAccounts() {
+        final List<Account> favoritedAccountList = new ArrayList<>();
+        JsonArray favoritedAccountsObject = retrieveData(FAVORITES_URL + apiKey).getAsJsonArray();
+        for (JsonElement jsonElement : favoritedAccountsObject) {
+            if(jsonElement.isJsonObject()) {
+                favoritedAccountList.add(gson.fromJson(jsonElement, Account.class));
+            }
+        }
+        return favoritedAccountList;
     }
 
     public AsynchronousDataRetriever toAsync() {
